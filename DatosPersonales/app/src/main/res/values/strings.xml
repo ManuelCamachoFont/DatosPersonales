@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Datos Personales</string>
+    <string name="idioma">Idioma:</string>
+    <string-array name="idiomas">
+        <item>Español</item>
+        <item>English</item>
+        <item>Français</item>
+    </string-array>
+    <string name="nombre">Escriba aquí su nombre</string>
+    <string name="apellido">Escriba aquí sus apellidos</string>
+    <string name="edad">Escriba aquí su edad</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string-array name="estadoCivil">
+        <item name="seleccionar"> -- Seleccione estado civil -- </item>
+        <item name="soltero">Solter@</item>
+        <item name="casado">Casad@</item>
+        <item name="separado">Separad@</item>
+        <item name="viudo">Viud@</item>
+        <item name="otro">Otr@</item>
+    </string-array>
+    <string name="hijos">¿Tiene hijos?</string>
+    <string name="datos">Mostrar datos</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="error">Te falta escribir nombre, apellidos y edad</string>
+    <string name="nombreErr">Nombre</string>
+    <string name="apellidosErr">Apellidos</string>
+    <string name="edadErr">Edad</string>
+    <string name="generoErr">Género</string>
+    <string name="estadoErr">Estado Civil</string>
+    <string name="mayorEdad">es mayor de edad</string>
+    <string name="menorEdad">es menor de edad</string>
+    <string name="conHijos">tiene hijos.</string>
+    <string name="sinHijos">no tiene hijos.</string>
+</resources>

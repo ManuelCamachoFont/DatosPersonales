@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Données personnelles</string>
+    <string name="idioma">Langue :</string>
+    <string-array name="idiomas">
+        <item>Espagnol</item>
+        <item>Anglais</item>
+        <item>Français</item>
+    </string-array>
+    <string name="nombre">Tapez votre prénom ici</string>
+    <string name="apellido">Tapez votre nom ici</string>
+    <string name="edad">Tapez votre âge ici</string>
+    <string name="hombre">Homme</string>
+    <string name="mujer">Femme</string>
+    <string-array name="estadoCivil">
+        <item name="seleccionar"> -- Sélectionnez votre état civil -- </item>
+        <item name="soltero">Célibataire</item>
+        <item name="casado">Marié(e)</item>
+        <item name="separado">Séparé(e)</item>
+        <item name="viudo">Veuf / Veuve</item>
+        <item name="otro">Autre</item>
+    </string-array>
+    <string name="hijos">Avez-vous des enfants ?</string>
+    <string name="datos">Afficher les données</string>
+    <string name="reiniciar">Réinitialiser</string>
+    <string name="error">Il vous manque le prénom, le nom et l\'âge</string>
+    <string name="nombreErr">Prénom</string>
+    <string name="apellidosErr">Nom</string>
+    <string name="edadErr">Âge</string>
+    <string name="generoErr">Genre</string>
+    <string name="estadoErr">État civil</string>
+    <string name="mayorEdad">est majeur</string>
+    <string name="menorEdad">est mineur</string>
+    <string name="conHijos">a des enfants.</string>
+    <string name="sinHijos">n\'a pas d\'enfants.</string>
+</resources>

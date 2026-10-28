@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Personal Data</string>
+    <string name="idioma">Language:</string>
+    <string-array name="idiomas">
+        <item>Spanish</item>
+        <item>English</item>
+        <item>French</item>
+    </string-array>
+    <string name="nombre">Type your name here</string>
+    <string name="apellido">Type your last name here</string>
+    <string name="edad">Type your age here</string>
+    <string name="hombre">Male</string>
+    <string name="mujer">Female</string>
+    <string-array name="estadoCivil">
+        <item name="seleccionar"> -- Select marital status -- </item>
+        <item name="soltero">Single</item>
+        <item name="casado">Married</item>
+        <item name="separado">Separated</item>
+        <item name="viudo">Widowed</item>
+        <item name="otro">Other</item>
+    </string-array>
+    <string name="hijos">Do you have children?</string>
+    <string name="datos">Show data</string>
+    <string name="reiniciar">Reset</string>
+    <string name="error">You are missing name, last name, and age</string>
+    <string name="nombreErr">Name</string>
+    <string name="apellidosErr">Last name</string>
+    <string name="edadErr">Age</string>
+    <string name="generoErr">Gender</string>
+    <string name="estadoErr">Marital Status</string>
+    <string name="mayorEdad">is of legal age</string>
+    <string name="menorEdad">is a minor</string>
+    <string name="conHijos">has children.</string>
+    <string name="sinHijos">has no children.</string>
+</resources>
