@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                         langCode = "fr";
                         break;
                     default:
-                        Snackbar.make(parent, "Error: Opción no válida", Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(parent, "Error", Snackbar.LENGTH_LONG).show();
                         return;
                 }
                 LocaleListCompat locales = LocaleListCompat.forLanguageTags(langCode);
@@ -112,24 +112,34 @@ public class MainActivity extends AppCompatActivity {
 
             if (name.isEmpty()){
                 options.add(getString(R.string.nombreErr));
-                txtName.setError("Completa el campo");
+                txtName.setError(getString(R.string.camposError));
             }
 
-            if (surnames.isEmpty()){
+            if (surnames.isEmpty()) {
                 options.add(getString(R.string.apellidosErr));
-                txtSurname.setError("Completa el campo");
+                txtSurname.setError(getString(R.string.camposError));
             }
 
-            if (age.isEmpty()){
+            if (age.isEmpty()) {
                 options.add(getString(R.string.edadErr));
-                txtAge.setError("Completa el campo");
-            }
-            else{
-                if ((Integer.parseInt(age)> 150) || (Integer.parseInt(age)<0)){
-                    options.add("Edad");
-                    txtAge.setError("Escriba una edad válida");
+                txtAge.setError(getString(R.string.camposError));
+            } else if (!android.text.TextUtils.isDigitsOnly(age)) {
+                options.add(getString(R.string.edadErr));
+                txtAge.setError(getString(R.string.numError));
+            } else {
+                try {
+                    int ageParsed = Integer.parseInt(age);
+
+                    if ((ageParsed > 150) || (ageParsed < 0)) {
+                        options.add(getString(R.string.edadErr));
+                        txtAge.setError(getString(R.string.edadError));
+                    } else {
+                        checkedAge = checkAge(ageParsed);
+                    }
+                } catch (NumberFormatException e) {
+                    options.add(getString(R.string.edadErr));
+                    txtAge.setError(getString(R.string.numError));
                 }
-                checkedAge = checkAge(Integer.parseInt(age));
 
             }
 
@@ -142,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (!options.isEmpty()){
-                txtError.setText("Falta por completar: " + android.text.TextUtils.join(", ", options) + ".");
+                txtError.setText(getString(R.string.mensjError) + android.text.TextUtils.join(", ", options) + ".");
             }
             else{
                 txtError.setText("");
@@ -153,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String parents = checkParents(chooser);
 
-                String infoMessage = surnames + ", " +  name + ", " + checkedAge + ", " + gender.toLowerCase() + ", " + status.toLowerCase() + " y " + parents;
+                String infoMessage = surnames + ", " +  name + ", " + checkedAge + ", " + gender.toLowerCase() + ", " + status.toLowerCase() + " " + getString(R.string.conj) + " " + parents;
                 Toast.makeText(this, infoMessage, Toast.LENGTH_LONG).show();
 
             }

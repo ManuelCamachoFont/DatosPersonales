@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Données personnelles</string>
+    <string name="app_name">Datos Personales</string>
     <string name="idioma">Langue :</string>
     <string-array name="idiomas">
         <item>Espagnol</item>
@@ -32,4 +32,9 @@
     <string name="menorEdad">est mineur</string>
     <string name="conHijos">a des enfants.</string>
     <string name="sinHijos">n\'a pas d\'enfants.</string>
+    <string name="conj">et</string>
+    <string name="camposError">Veuillez remplir ce champ</string>
+    <string name="numError">Entrez un nombre valide</string>
+    <string name="edadError">Entrez un âge réel</string>
+    <string name="mensjError">"Restant à compléter : "</string>
 </resources>
